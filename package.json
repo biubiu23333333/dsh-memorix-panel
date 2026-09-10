@@ -1,0 +1,50 @@
+{
+  "name": "dsh-memorix-panel",
+  "version": "0.1.0",
+  "description": "Memorix memory panel for the DSH Web GUI: browse every project and memory, read full details, archive/restore and create memories — inside the session, with writes going through the official memorix CLI.",
+  "type": "module",
+  "license": "MIT",
+  "author": "biubiu23333333",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biubiu23333333/dsh-memorix-panel.git"
+  },
+  "homepage": "https://github.com/biubiu23333333/dsh-memorix-panel",
+  "bugs": {
+    "url": "https://github.com/biubiu23333333/dsh-memorix-panel/issues"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "memorix",
+    "memory",
+    "web-ui",
+    "mcp"
+  ]
+}

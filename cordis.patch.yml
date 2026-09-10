@@ -1,0 +1,22 @@
+# dsh-memorix-panel bundle patch: one host row over the web profile.
+#
+# The row name resolves from the profile's own node_modules, where
+# `dsh plugin --profile web add <spec>` installed this package; the browser
+# half is served from that same package (dsh.client.platform: web).
+#
+# Every config field below is optional — the values shown are the defaults.
+- insert:
+    - id: memorix-panel
+      name: dsh-memorix-panel
+      # config:
+      #   # memorix CLI executable (absolute path also accepted).
+      #   bin: memorix
+      #   # Memorix SQLite store; defaults to $MEMORIX_HOME/data/memorix.db,
+      #   # i.e. ~/.memorix/data/memorix.db.
+      #   dbPath: /home/you/.memorix/data/memorix.db
+      #   # Per-CLI-call timeout in milliseconds.
+      #   cliTimeoutMs: 25000
+      #   # Allow the detail view to change a memory's status.
+      #   allowWrite: true
+      #   # Allow the panel's "+ 新建记忆" form.
+      #   allowStore: true
